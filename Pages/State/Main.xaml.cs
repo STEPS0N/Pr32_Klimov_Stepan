@@ -20,9 +20,14 @@ namespace VinylRecordsApplication_Klimov.Pages.State
     /// </summary>
     public partial class Main : Page
     {
+        public IEnumerable<Classes.State> AllState = Classes.State.AllState();
+
         public Main()
         {
             InitializeComponent();
+
+            foreach (var State in AllState)
+                stateParent.Children.Add(new Elements.State(State, this));
         }
     }
 }

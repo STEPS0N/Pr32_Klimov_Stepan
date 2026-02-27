@@ -20,9 +20,11 @@ namespace VinylRecordsApplication_Klimov
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow mainWindow;
         public MainWindow()
         {
             InitializeComponent();
+            mainWindow = this;
         }
 
         public void OpenPage(Page pages)
