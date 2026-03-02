@@ -68,6 +68,7 @@
     <Compile Include="Classes\Manufacturer.cs" />
     <Compile Include="Classes\Record.cs" />
     <Compile Include="Classes\State.cs" />
+    <Compile Include="Classes\Supply.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -81,6 +82,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Manufacturer\Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Records\Add.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -114,6 +119,9 @@
     </Compile>
     <Compile Include="Pages\Manufacturer\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Records\Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Records\Elements\Record.xaml.cs">
       <DependentUpon>Record.xaml</DependentUpon>

@@ -27,7 +27,9 @@ namespace VinylRecordsApplication_Klimov.Pages.State
             InitializeComponent();
 
             foreach (var State in AllState)
+            {
                 stateParent.Children.Add(new Elements.State(State, this));
+            }
         }
     }
 }
