@@ -30,7 +30,7 @@
                 </ComboBox.Effect>
             </ComboBox>
             <Label Content="Состояние" Margin="10,4,10,0" VerticalAlignment="Top" Grid.Column="2"/>
-            <ComboBox x:Name="tbMState" Margin="10,30,10,0" Height="25" VerticalAlignment="Top"
+            <ComboBox x:Name="tbState" Margin="10,30,10,0" Height="25" VerticalAlignment="Top"
                       Grid.Column="2" SelectedIndex="9" SelectionChanged="FilterRecords">
                 <ComboBox.Effect>
                     <DropShadowEffect BlurRadius="10" Color="Black" Direction="315" ShadowDepth="2" Opacity="0.5"/>
@@ -38,7 +38,7 @@
             </ComboBox>
         </Grid>
         <ScrollViewer Margin="10,65,10,10">
-            <StackPanel x:Name="manufacterParent" Margin="10">
+            <StackPanel x:Name="recordsParent" Margin="10">
 
             </StackPanel>
         </ScrollViewer>
