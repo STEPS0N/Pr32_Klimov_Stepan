@@ -42,7 +42,7 @@ namespace VinylRecordsApplication_Klimov.Classes
                     "INSERT INTO [dbo].[Manufacturer]([Name], [CountryCode], [Phone], [Mail]) " +
                     "VALUES (" +
                         $"N'{this.Name}', " +
-                        $"'{this.CountryCode}', " +
+                        $"{this.CountryCode}, " +
                         $"'{this.Phone}', " +
                         $"'{this.Mail}')");
 
@@ -57,7 +57,7 @@ namespace VinylRecordsApplication_Klimov.Classes
                 Classes.DBConnection.Connection(
                     "UPDATE [dbo].[Manufacturer] SET " +
                     $"[Name] = N'{this.Name}', " +
-                    $"[CountryCode] = '{this.CountryCode}', " +
+                    $"[CountryCode] = {this.CountryCode}, " +
                     $"[Phone] = '{this.Phone}', " +
                     $"[Mail] = '{this.Mail}' " +
                     $"WHERE [Id] = {this.Id}");
