@@ -190,6 +190,8 @@
     <Resource Include="Image\ic_supply.png" />
     <Resource Include="Image\ic_VinilRecord.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Image\BD.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

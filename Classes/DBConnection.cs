@@ -13,7 +13,7 @@ namespace VinylRecordsApplication_Klimov.Classes
         public static DataTable Connection(string SQL)
         {
             DataTable dataTable = new DataTable("Datatable");
-            SqlConnection sqlConnection = new SqlConnection("server=localhost;Trusted_Connection=No;Database=VinylRecords;User=root;PWD=;");
+            SqlConnection sqlConnection = new SqlConnection("server=WIN-R32OTPM964O\\SQLEXPRESS;Trusted_Connection=True;Database=VinylRecords;User=WIN-R32OTPM964O\\user;PWD=;");
             sqlConnection.Open();
             SqlCommand sqlCommand = sqlConnection.CreateCommand();
             sqlCommand.CommandText = SQL;

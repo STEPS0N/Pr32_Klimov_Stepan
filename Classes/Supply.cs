@@ -69,5 +69,7 @@ namespace VinylRecordsApplication_Klimov.Classes
         {
             Classes.DBConnection.Connection($"DELETE FROM [dbo].[Supple] WHERE [Id] = {this.Id};");
         }
+
+        public void Export() { }
     }
 }

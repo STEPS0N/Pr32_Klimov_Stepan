@@ -11,7 +11,7 @@
             <MenuItem Header="Пластинки" Height="25">
                 <MenuItem Header="Список" Click="OpenRecordList"/>
                 <MenuItem Header="Добавить" Click="OpenRecordAdd"/>
-                <MenuItem Header="Экспортировать" Click="ExportRecord"/>
+                <!--<MenuItem Header="Экспортировать" Click="ExportRecord"/>-->
             </MenuItem>
             <MenuItem Header="Поставщики">
                 <MenuItem Header="Список" Click="OpenManufacturersList"/>

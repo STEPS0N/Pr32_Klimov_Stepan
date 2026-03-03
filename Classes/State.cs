@@ -47,7 +47,7 @@ namespace VinylRecordsApplication_Klimov.Classes
                     "UPDATE [dbo].[State] SET " +
                     $"[Name] = N'{this.Name}', " +
                     $"[Subname] = N'{this.SubName}', " +
-                    $"[Description] = N'{this.Description}', " +
+                    $"[Description] = N'{this.Description}' " +
                     $"WHERE [Id] = {this.Id};");
             }
         }
